@@ -4,7 +4,6 @@
 class Solution:
     def firstBadVersion(self, n: int) -> int:
         res = float('inf')
-        temp = False
         l,r = 0,n
         while l <= r:
             middle = (l+r) // 2
