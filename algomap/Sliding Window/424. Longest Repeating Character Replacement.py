@@ -5,7 +5,6 @@ class Solution:
         counts = [0] * 26
         for r in range(len(s)):
             counts[ord(s[r]) - 65] += 1
-            print(max(counts))
             while (r-l+1) - max(counts) >k:
                 counts[ord(s[l]) - 65] -= 1
                 l += 1
